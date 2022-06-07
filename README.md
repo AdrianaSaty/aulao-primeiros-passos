@@ -6,7 +6,7 @@ Esse é o repositório com o código do aulão de "Primeiros Passos na Programa�
 
 Nesse projeto vamos fazer um buscador de temperatura. O usuário digita o nome da cidade e é mostrado na tela o tempo e temperatura atual, direção do vento e a umidade. E também a previsão dos próximos 5 dias.
 
-O projeto pronto você pode conferir aqui: ___________
+O projeto pronto você pode conferir aqui: https://www.figma.com/file/pQVOo3B1fm4f9jLqyk9O32/Aulão?node-id=0%3A1
 
 ## 🔧 Instalação
 Não é preciso instalar nada! 
