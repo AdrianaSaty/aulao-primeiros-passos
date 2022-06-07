@@ -7,6 +7,22 @@
         <title>Weather</title>
         <link rel="stylesheet" href="index.css">
     </head>
+    <script>
+        function searchCity(city) {
+            const url = `http://api.weatherapi.com/v1/current.json?key=cc345626e365465b9e9225730220606&q=${city}&aqi=no`;
+            console.log(city)
+        fetch(url)
+        .then(retorno =>{ 
+            console.log(retorno)
+        })
+        .catch(error => console.log(error))
+        }
+
+        function getCity() {
+            const city = document.getElementById('city').value;
+            searchCity(city)
+        }
+    </script>
     <body>
         <div class="container">
             <nav>
@@ -20,8 +36,21 @@
                 </ul>
             </nav>
             <header>
-                <h1>Previsão do Tempo</h1>
+                <h1></h1>
             </header>
+            <div class="box">
+                <div class="box-buttons">
+                    <button class="close"></button>
+                    <button class="minimize"></button>
+                    <button class="expand"></button>
+                </div>
+                <div class="container">
+                    <p>Consulte a temperatura de uma cidade:</p>
+                    <input type="search" id="city">
+                    <button onclick="getCity()">Procurar</button>
+                    <hr>
+                </div>
+            </div>
         </div>
     </body>
 </html>

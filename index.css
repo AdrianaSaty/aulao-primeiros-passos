@@ -26,3 +26,47 @@ a {
     color: black;
     text-decoration: none;
 }
+
+.box {
+    margin: 30px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    background-color: #35393C;
+}
+
+.close {
+    background-color: #F65E5F;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: none;
+}
+
+.minimize {
+    background-color: #E3BD53;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: none;
+    margin-left: 5px;
+}
+
+.expand {
+    background-color: #5EBD4A;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: none;
+    margin-left: 5px;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+hr {
+    margin: 20px 0;
+    background-color: green;
+    height: 1px;
+    border: none;
+}
