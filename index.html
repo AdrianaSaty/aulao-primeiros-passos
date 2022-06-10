@@ -9,14 +9,21 @@
     </head>
     <script>
         function searchCity(city) {
-            const url = `http://api.weatherapi.com/v1/current.json?key=cc345626e365465b9e9225730220606&q=${city}&aqi=no`;
+            const url = `https://api.weatherapi.com/v1/current.json?key=71cb9d6ee141459c9c311223212110&q=${city}&lang=pt`;
+            
             console.log(city)
         fetch(url)
-        .then(retorno =>{ 
-            console.log(retorno)
-        })
+        .then((response) => {
+        if (response.status === 200) {
+          return response.json();
+        }
+      })
+      .then((data) => {
+        console.log(data);
+      })
         .catch(error => console.log(error))
         }
+        
 
         function getCity() {
             const city = document.getElementById('city').value;
