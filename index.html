@@ -19,9 +19,19 @@
                     </li>
                 </ul>
             </nav>
-            <header>
-                <h1>Previsão do Tempo</h1>
-            </header>
+            <div class="window">
+                <button class="terminal-button red"></button>
+                <button class="terminal-button yellow"></button>
+                <button class="terminal-button green"></button>
+                <div class="title">
+                  Consulte a temperatura de uma cidade!
+                </div>
+                <div class="content">
+                    <input type="text" id="city">
+                    <button class="search" onclick="searchWeather()">Pesquisar</button>
+                    <div id="temperature"></div>
+                </div>
+              </div>
         </div>
     </body>
 </html>
