@@ -115,3 +115,15 @@ a {
     }
   }
 
+  #temperature {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .capitalize{
+    margin-bottom: 5px;
+  }
+
+  .capitalize::first-letter {
+    text-transform: uppercase;
+  }
