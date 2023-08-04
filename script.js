@@ -7,7 +7,7 @@ function searchWeather() {
     const lang = 'pt';
     const celsius = 'metric'
     const APIkey = '3ed581ededecc702e7c6bf69d2351db9';
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=${lang}&units=${celsius}&appid=${API}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=${lang}&units=${celsius}&appid=${APIkey}`;
 
     fetch(url)
         .then(response => response.json())
