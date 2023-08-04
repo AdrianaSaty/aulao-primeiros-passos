@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Weather</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a>Sobre o Projeto</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="window">
-                <button class="terminal-button red"></button>
-                <button class="terminal-button yellow"></button>
-                <button class="terminal-button green"></button>
-                <div class="title">
-                  Consulte a temperatura de uma cidade!
-                </div>
-                <div class="content">
-                    <input type="text" id="city">
-                    <button class="search" onclick="searchWeather()">Pesquisar</button>
-                </div>
-                <div id="temperature"></div>
-              </div>
-        </div>
-        <script src="script.js"></script>
-    </body>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weather</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<div class="container">
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="myCv.html">Currículo</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="window">
+			<button class="terminal-button red"></button>
+			<button class="terminal-button yellow"></button>
+			<button class="terminal-button green"></button>
+			<div class="title">
+				Consulte a temperatura de uma cidade!
+			</div>
+			<div class="content">
+				<input type="text" id="city">
+				<button class="search" onclick="searchWeather()">Pesquisar</button>
+			</div>
+			<div id="temperature"></div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
 </html>
