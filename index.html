@@ -22,15 +22,16 @@
 			</ul>
 		</nav>
 		<div class="window">
-			<button class="terminal-button red"></button>
-			<button class="terminal-button yellow"></button>
-			<button class="terminal-button green"></button>
+			<button class="terminal-button bg-red"></button>
+			<button class="terminal-button bg-yellow"></button>
+			<button class="terminal-button bg-green"></button>
 			<div class="title">
 				Consulte a temperatura de uma cidade!
 			</div>
+			<!-- colocar o input dentro do form e atrelar o botao -->
 			<div class="content">
 				<input type="text" id="city">
-				<button class="search" onclick="searchWeather()">Pesquisar</button>
+				<button class="search" id="searchWeatherButton">Pesquisar</button>
 			</div>
 			<div id="temperature"></div>
 		</div>

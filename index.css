@@ -45,16 +45,16 @@ a {
     margin-top: 15px;
   }
 
-  .red {
+  .bg-red {
     background-color: #F65E5F;
     margin-left: 20px;
   }
 
-  .yellow {
+  .bg-yellow {
     background-color: #E3BD53;
   }
 
-  .green {
+  .bg-green {
     background-color: #5EBD4A;
   }
 
@@ -83,7 +83,8 @@ a {
     }
   }
 
-  #city {
+  /* usar só classes */
+  #city { 
     border-radius: 8px;
     border: none;
     box-sizing: border-box;
@@ -98,7 +99,9 @@ a {
     }
   }
 
-  .search {
+
+  /* button .search { */
+    .search {
     background-color: #5EBD4A;
     border-radius: 8px;
     border: none;
