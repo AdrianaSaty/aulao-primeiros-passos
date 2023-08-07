@@ -1,8 +1,11 @@
 const input = document.querySelector('#city');
 const temperatureDiv = document.querySelector('#temperature');
-document.getElementById("searchWeatherButton").onclick = async () => {
+const weatherForm = document.getElementById('weatherForm');
+
+weatherForm.addEventListener("submit", async () => {
+    event.preventDefault();
     await searchWeather();
-};
+});
 
 async function searchWeather() {
     const city = input.value;
@@ -24,10 +27,24 @@ function showWeatherData(weatherData) {
     const iconUrl = `https://openweathermap.org/img/w/${icon}.png`;
     const city = input.value;
 
-    // adicionar item por item, retirar essa parte:
-    temperatureDiv.innerHTML = ` 
-        <h2>${city}</h2>
-        <img src="${iconUrl}" alt="${description}">
-        <p class="capitalize">${description}</p>
-        <p>Temperatura: ${temp}°C</p>`
+    temperatureDiv.innerHTML = "";
+
+    const cityHeading = document.createElement("h2");
+    cityHeading.textContent = city;
+
+    const iconImage = document.createElement("img");
+    iconImage.src = iconUrl;
+    iconImage.alt = description;
+
+    const descriptionParagraph = document.createElement("p");
+    descriptionParagraph.className = "capitalize";
+    descriptionParagraph.textContent = description;
+
+    const temperatureParagraph = document.createElement("p");
+    temperatureParagraph.textContent = `Temperatura: ${temp}°C`;
+
+    temperatureDiv.appendChild(cityHeading);
+    temperatureDiv.appendChild(iconImage);
+    temperatureDiv.appendChild(descriptionParagraph);
+    temperatureDiv.appendChild(temperatureParagraph);
 }

@@ -28,12 +28,13 @@
 			<div class="title">
 				Consulte a temperatura de uma cidade!
 			</div>
-			<!-- colocar o input dentro do form e atrelar o botao -->
-			<div class="content">
-				<input type="text" id="city">
-				<button class="search" id="searchWeatherButton">Pesquisar</button>
-			</div>
-			<div id="temperature"></div>
+			<form id="weatherForm">
+				<div class="content">
+					<input class="inputText" type="text" id="city" required>
+					<button class="buttonSearch" id="searchWeatherButton">Pesquisar</button>
+				</div>
+			</form>
+			<div id="temperature" class="tempStyle"></div>
 		</div>
 	</div>
 	<script src="script.js"></script>
