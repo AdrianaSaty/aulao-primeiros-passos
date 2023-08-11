@@ -31,7 +31,7 @@ a {
   background-color: #35393C;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 700px;
+  width: 100%;
   padding: 20px;
   margin: auto;
   margin-top: 50px;
@@ -59,7 +59,6 @@ a {
   background-color: #5EBD4A;
 }
 
-
 .popup h2 {
   text-align: left;
   font-size: 20px;
@@ -71,28 +70,14 @@ a {
   text-align: center;
 }
 
-
 .weather h2 {
   text-align: center;
-}
-
-@media (max-width: 768px) {
-  .popup h2 {
-    text-align: center;
-  }
-  input {
-    width: 100%;
-  }
-  .search {
-    margin-top: 10px;
-    width: 100%;
-  }
 }
 
 .popup form {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 input {
@@ -101,11 +86,8 @@ input {
   box-sizing: border-box;
   margin-right: 10px;
   padding: 7px;
-  width: 75%;
+  width: 100%;
 }
-
-
-
 
 .search {
   background-color: #5EBD4A;
@@ -113,17 +95,9 @@ input {
   border: none;
   cursor: pointer;
   color: #FFFF;
-  width: 20%;
-  padding-top: 5px;
-}
-
-@media (max-width: 768px) {
-
-}
-
-.tempStyle {
-  text-align: center;
-  padding-bottom: 15px;
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
 }
 
 .capitalize {
@@ -132,4 +106,10 @@ input {
 
 .capitalize::first-letter {
   text-transform: uppercase;
+}
+
+@media (min-width: 769px) {
+  .popup {
+    width: 700px;
+  }
 }
