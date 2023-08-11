@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -26,11 +27,12 @@ a {
   text-decoration: none;
 }
 
-.window {
+.popup {
   background-color: #35393C;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 700px;
+  width: 700px;
+  padding: 20px;
   margin: auto;
   margin-top: 50px;
   font-family: Arial, sans-serif;
@@ -45,46 +47,55 @@ a {
   margin-top: 15px;
 }
 
-.bg-red {
+.terminal-button:nth-child(1) {
   background-color: #F65E5F;
-  margin-left: 20px;
 }
 
-.bg-yellow {
+.terminal-button:nth-child(2) {
   background-color: #E3BD53;
 }
 
-.bg-green {
+.terminal-button:nth-child(3) {
   background-color: #5EBD4A;
 }
 
-.title {
+
+.popup h2 {
   text-align: left;
   font-size: 20px;
-  padding: 10px 20px;
+  padding: 10px 0px;
   margin-top: 5px;
 }
 
+.weather {
+  text-align: center;
+}
+
+
+.weather h2 {
+  text-align: center;
+}
+
 @media (max-width: 768px) {
-  .title {
+  .popup h2 {
     text-align: center;
   }
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
-@media (min-width: 768px) {
-  .content {
-    flex-direction: row;
+  input {
+    width: 100%;
+  }
+  .search {
+    margin-top: 10px;
+    width: 100%;
   }
 }
 
-/* usar só classes */
-.inputText {
+.popup form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+input {
   border-radius: 8px;
   border: none;
   box-sizing: border-box;
@@ -93,29 +104,21 @@ a {
   width: 75%;
 }
 
-@media (max-width: 768px) {
-  .inputText {
-    width: 100%;
-  }
-}
 
 
-/* button .search { */
-.buttonSearch {
+
+.search {
   background-color: #5EBD4A;
   border-radius: 8px;
   border: none;
   cursor: pointer;
   color: #FFFF;
   width: 20%;
-  padding: 5px;
+  padding-top: 5px;
 }
 
 @media (max-width: 768px) {
-  .buttonSearch {
-    margin-top: 10px;
-    width: 100%;
-  }
+
 }
 
 .tempStyle {

@@ -2,7 +2,7 @@ const input = document.querySelector('#city');
 const temperatureDiv = document.querySelector('#temperature');
 const weatherForm = document.getElementById('weatherForm');
 
-weatherForm.addEventListener("submit", async () => {
+weatherForm.addEventListener("submit", async (event) => {
     event.preventDefault();
     await searchWeather();
 });
@@ -11,12 +11,12 @@ async function searchWeather() {
     const city = input.value;
     const lang = 'pt';
     const celsius = 'metric'
-    const APIkey = '3ed581ededecc702e7c6bf69d2351db9';
+    const APIkey = 'cc15b86641ceefed4f4b037128019183';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=${lang}&units=${celsius}&appid=${APIkey}`;
 
     const weatherResponse = await fetch(url)
     const weatherData = await weatherResponse.json()
-    console.log(weatherData.body)
+    console.log(weatherData)
     showWeatherData(weatherData)
 }
 

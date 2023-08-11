@@ -21,20 +21,18 @@
 				</li>
 			</ul>
 		</nav>
-		<div class="window">
+		<div class="popup">
 			<button class="terminal-button bg-red"></button>
 			<button class="terminal-button bg-yellow"></button>
 			<button class="terminal-button bg-green"></button>
-			<div class="title">
+			<h2>
 				Consulte a temperatura de uma cidade!
-			</div>
-			<form id="weatherForm">
-				<div class="content">
-					<input class="inputText" type="text" id="city" required>
-					<button class="buttonSearch" id="searchWeatherButton">Pesquisar</button>
-				</div>
+			</h2>
+			<form class="content" id="weatherForm">
+				<input class="inputText" type="text" id="city" required>
+				<button class="search" id="searchWeatherButton">Pesquisar</button>
 			</form>
-			<div id="temperature" class="tempStyle"></div>
+			<div id="temperature" class="weather"></div>
 		</div>
 	</div>
 	<script src="script.js"></script>
